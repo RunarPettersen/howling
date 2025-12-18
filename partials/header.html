@@ -1,0 +1,101 @@
+<div class="relative">
+  <header
+    class="relative bg-bg text-white px-4 py-3 flex justify-between items-center h-40"
+  >
+    <div class="flex items-center">
+      <a href="/feed.html">
+        <img
+          src="/images/logo/howling-logo-white.png"
+          alt="Howling icon logo"
+          class="hidden sm:block h-34"
+        />
+      </a>
+    </div>
+
+    <div class="absolute left-1/2 transform -translate-x-1/2">
+      <a href="/feed.html">
+        <img
+          src="/images/logo/howling-logo-white-written.png"
+          alt="Howling text logo"
+          class="h-16 md:h-34"
+        />
+      </a>
+    </div>
+
+    <!-- Desktop menu -->
+    <div class="hidden lg:flex flex-col items-end gap-2 font-header text-xl">
+      <nav class="flex gap-4">
+        <a href="/feed.html" class="hover:underline">Feed</a>
+        <a href="/user/following.html" class="hover:underline">Following</a>
+        <a href="/user/user.html" class="hover:underline">Profile</a>
+      </nav>
+      <form
+        id="searchForm"
+        action="/search/results.html"
+        method="GET"
+        class="flex items-center gap-2"
+      >
+        <input
+          type="text"
+          name="query"
+          id="searchInput"
+          placeholder="Search..."
+          required
+          class="px-2 py-1 rounded-md text-black bg-white"
+        />
+        <button
+          type="submit"
+          class="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200"
+        >
+          Search
+        </button>
+      </form>
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div
+      id="hamburgerButton"
+      class="lg:hidden z-50 cursor-pointer block space-y-1"
+    >
+      <div class="h-1 w-8 bg-white transition-all duration-300"></div>
+      <div class="h-1 w-8 bg-white transition-all duration-300"></div>
+      <div class="h-1 w-8 bg-white transition-all duration-300"></div>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobileMenu"
+    class="fixed top-40 right-0 h-full w-3/4 max-w-xs bg-black text-white p-6 z-40 transform translate-x-full transition-transform duration-300 lg:hidden"
+  >
+    <ul class="space-y-4 text-lg font-header">
+      <li><a href="/feed.html" class="hover:underline">Feed</a></li>
+      <li>
+        <a href="/user/following.html" class="hover:underline">Following</a>
+      </li>
+      <li><a href="/user/user.html" class="hover:underline">Profile</a></li>
+    </ul>
+
+    <form
+      id="searchFormMobile"
+      action="/search/results.html"
+      method="GET"
+      class="mt-6 flex flex-col gap-2"
+    >
+      <input
+        type="text"
+        name="query"
+        id="searchInputMobile"
+        placeholder="Search..."
+        required
+        class="px-2 py-1 rounded-md text-black bg-white"
+      />
+      <button
+        type="submit"
+        class="bg-white text-black px-3 py-1 rounded-md hover:bg-gray-200"
+      >
+        Search
+      </button>
+    </form>
+  </div>
+</div>

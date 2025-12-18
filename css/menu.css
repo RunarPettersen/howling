@@ -1,0 +1,16 @@
+#hamburgerButton.open div:nth-child(1) {
+  transform: rotate(45deg) translateY(11px);
+}
+
+#hamburgerButton.open div:nth-child(2) {
+  opacity: 0;
+}
+
+#hamburgerButton.open div:nth-child(3) {
+  transform: rotate(-45deg) translateY(-11px);
+}
+
+#hamburgerButton div {
+  transition: transform 0.3s ease-in-out, opacity 0.2s ease-in-out;
+  transform-origin: center;
+}

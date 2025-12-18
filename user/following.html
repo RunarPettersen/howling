@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Who are following and who are following you on Howling." />
+  <title>Howling - Following and Followers</title>
+  <link rel="icon" type="image/png" href="../images/logo/howling-favicon.png" />
+  <link rel="stylesheet" href="../src/output.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col text-black">
+
+  <div id="site-header"></div>
+
+  <main class="bg-white space-y-4 max-w-[800px] w-full mx-auto px-4">
+    
+    <!-- Following Section -->
+    <section id="followingSection" class="space-y-4 max-w-[800px] w-full mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">People You Follow</h2>
+      <ul id="followingList" class="list-disc list-inside space-y-2 text-gray-800"></ul>
+    </section>
+
+    <!-- Followers Section -->
+    <section id="followersSection" class="space-y-4 max-w-[800px] w-full mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-4">People Following You</h2>
+      <ul id="followersList" class="list-disc list-inside space-y-2 text-gray-800"></ul>
+    </section>
+
+    <!-- Feed Section -->
+    <section id="followingFeed" class="max-w-5xl mx-auto space-y-6">
+      <h2 class="text-2xl font-bold text-center">Recent Posts from People You Follow</h2>
+      <div id="feedContainer" class="space-y-4 max-w-[800px] w-full mx-auto px-4"></div>
+    </section>
+
+  </main>
+
+  <footer class="text-center text-sm py-6 text-gray-500">
+    &copy; 2025 Howling. All rights reserved.
+  </footer>
+
+  <script type="module" src="../js/profile/following.js"></script>
+  <script type="module" src="../js/profile/followingPosts.js"></script>
+</body>
+</html>

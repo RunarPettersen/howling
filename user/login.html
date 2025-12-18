@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Login on Howling." />
+    <title>Login | Howling</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../images/logo/howling-favicon.png"
+    />
+    <link rel="stylesheet" href="../src/output.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex flex-col text-black">
+    <div id="site-header"></div>
+
+    <main class="bg-white space-y-4 max-w-[800px] w-full mx-auto px-4 pb-10">
+      <form
+        id="loginForm"
+        class="bg-white rounded-lg p-6 max-w-md mx-auto space-y-5"
+      >
+        <h2 class="text-2xl font-bold text-center">Login</h2>
+
+        <!-- Error message (hidden by default) -->
+        <div
+          id="loginMessage"
+          class="hidden rounded-md border border-red-300 bg-red-50 px-4 py-3 text-sm text-red-800"
+          role="alert"
+          aria-live="polite"
+        ></div>
+
+        <div>
+          <label for="email" class="block font-medium">Email</label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="Enter your email"
+            class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <div>
+          <label for="password" class="block font-medium">Password</label>
+          <input
+            type="password"
+            id="password"
+            required
+            placeholder="Enter your password"
+            class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+
+        <button
+          id="loginBtn"
+          type="submit"
+          class="w-full bg-black text-white font-semibold py-2 rounded-md hover:bg-gray-800 transition cursor-pointer"
+        >
+          Login
+        </button>
+      </form>
+
+      <div class="text-center mt-6 space-y-1">
+        <p class="text-gray-700">Don't have an account?</p>
+        <p>
+          <a
+            href="./register.html"
+            class="text-primary hover:underline font-medium"
+          >
+            Get started now!
+          </a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="text-center text-sm py-6 text-gray-500">
+      &copy; 2025 Howling. All rights reserved.
+    </footer>
+
+    <script type="module" src="../js/login.js"></script>
+  </body>
+</html>

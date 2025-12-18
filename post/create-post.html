@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Create your post on Howling">
+  <title>Howling - Create Post</title>
+  <link rel="icon" type="image/png" href="../images/logo/howling-favicon.png">
+  <link rel="stylesheet" href="../src/output.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col">
+  <div id="site-header"></div>
+
+  <main class="space-y-4 max-w-[800px] w-full mx-auto px-4">
+    <form id="postForm" class="bg-white shadow-lg rounded-lg p-6 max-w-xl mx-auto space-y-5">
+      <h2 class="text-2xl font-bold text-center">Create a New Post</h2>
+
+      <div>
+        <label for="title" class="block font-medium">Title</label>
+        <input type="text" id="title" required
+               placeholder="Enter the post title"
+               class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bg" />
+      </div>
+
+      <div>
+        <label for="body" class="block font-medium">Body</label>
+        <textarea id="body"
+                  placeholder="Write your post content"
+                  class="w-full mt-1 p-2 border border-gray-300 rounded-md h-32 resize-y focus:outline-none focus:ring-2 focus:ring-bg"></textarea>
+      </div>
+
+      <div>
+        <label for="tags" class="block font-medium">Tags (comma-separated)</label>
+        <input type="text" id="tags"
+               placeholder="e.g., example,post"
+               class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bg" />
+      </div>
+
+      <div>
+        <label for="mediaUrl" class="block font-medium">Media URL</label>
+        <input type="url" id="mediaUrl"
+               placeholder="https://example.com/image.jpg"
+               class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bg" />
+      </div>
+
+      <div>
+        <label for="mediaAlt" class="block font-medium">Media Alt Text</label>
+        <input type="text" id="mediaAlt"
+               placeholder="Image description"
+               class="w-full mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-bg" />
+      </div>
+
+      <button type="submit"
+              class="w-full bg-primary text-white font-semibold py-2 rounded-md hover:bg-accent transition cursor-pointer">
+        Create Post
+      </button>
+    </form>
+  </main>
+
+  <footer class="text-center text-sm py-6 text-gray-500">
+    &copy; 2025 Howling. All rights reserved.
+  </footer>
+
+  <script type="module" src="../js/createPost.js"></script>
+</body>
+</html>

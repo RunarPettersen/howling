@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Profiles on Howling." />
+  <title>Howling - Profile</title>
+  <link rel="icon" type="image/png" href="../images/logo/howling-favicon.png" />
+  <link rel="stylesheet" href="../src/output.css" />
+  <link rel="stylesheet" href="../css/menu.css" />
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col text-black">
+  <div id="site-header"></div>
+
+  <main class="space-y-4 max-w-[800px] w-full mx-auto px-4">
+
+    <!-- Profile Header -->
+    <section id="profileHeader" class="bg-white rounded-lg shadow p-6 space-y-6 text-center max-w-3xl mx-auto">
+      <div class="rounded-md overflow-hidden shadow">
+        <img id="profileBanner" src="" alt="Profile Banner" class="w-full h-48 object-cover" />
+      </div>
+      </div>
+
+      <div class="relative -mt-16">
+        <div class="max-w-xl mx-auto">
+          <img id="avatar" src="../images/usericon.svg" alt="User Avatar" class="w-44 h-44 rounded-full mx-auto border-2 border-black -mt-16 shadow-md bg-white object-cover" />
+        </div>
+      </div>
+
+      <div>
+        <h2 id="profileName" class="text-2xl font-bold">Username</h2>
+        <p id="profileBio" class="text-gray-600"></p>
+        <button id="followBtn"
+                class="mt-4 px-4 py-2 bg-primary text-white rounded-md hover:bg-accent transition cursor-pointer">
+          Follow
+        </button>
+      </div>
+    </section>
+
+    <!-- Profile Posts -->
+    <section id="profilePosts" class="max-w-4xl mx-auto space-y-6">
+      <h3 class="text-xl font-semibold mb-4 text-center">Posts</h3>
+      <div id="postsContainer" class="space-y-4 max-w-[800px] w-full mx-auto px-4"></div>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm py-6 text-gray-500">
+    &copy; 2025 Howling. All rights reserved.
+  </footer>
+
+  <script type="module" src="../js/profile/profile.js"></script>
+</body>
+</html>
