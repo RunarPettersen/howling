@@ -1,6 +1,6 @@
 # Howling
 
-Live demo: [https://howlingtailwind.netlify.app/](https://howlingapp.netlify.app/)
+Live demo: [https://howlingapp.netlify.app/](https://howlingapp.netlify.app/)
 
 Howling is a social media frontend project built with Tailwind CSS v4 and JavaScript ES Modules. It connects to the Noroff Social API for posting, commenting, reacting, following users, and more.
 
